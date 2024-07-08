@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom'
-
 const Video = () => {
   return (
-    <div>
-        <h1>Video</h1>
-        <Link to={`/`}>awal</Link>
+    <div className="video-container">
+      <video className="full-screen-video bg-red-500 " controls autoPlay>
+        <source src="/public/kkn24.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   )
 }
