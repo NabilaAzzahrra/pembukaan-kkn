@@ -1,14 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-DONsvf3q.js"></script>
+    <title>Opening KKN TEMATIK 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        position: relative;
+        min-height: 100vh;
+        margin: 0;
+      }
+  
+      .background::before {
+        content: "";
+        background-image: url("/assets/pattern-DVbMC3rJ.jpg");
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.1; /* Mengatur opasitas gambar latar belakang */
+        z-index: -1; /* Membuat pseudo-elemen berada di belakang konten */
+      }
+  
+      #root {
+        position: relative;
+        z-index: 1; /* Memastikan konten berada di atas pseudo-elemen */
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DEINEtes.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DiwrgTda.css">
   </head>
-  <body>
+  <body class="background">
     <div id="root"></div>
   </body>
 </html>
